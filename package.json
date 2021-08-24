@@ -1,0 +1,20 @@
+{
+  "name": "portfoliofinal",
+  "version": "1.0.0",
+  "description": "Portfolio Patrick Seidel",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass src/styles.scss src/styles.css --watch ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Patrick-Seidel/PortfolioFinal.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Patrick-Seidel/PortfolioFinal/issues"
+  },
+  "homepage": "https://github.com/Patrick-Seidel/PortfolioFinal#readme"
+}

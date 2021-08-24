@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="DE">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Patrick Seidel" />
+    <meta name="keywords" content="Portfolio Patrick Seidel" />
+    <meta name="author" content="Patrick Seidel" />
+    <script src="https://kit.fontawesome.com/c0c17b31d5.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Patrick Seidel</title>
+
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <link rel="stylesheet" href="src/styles.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+</head>
+
+<body>
+    <div id="breaker">
+    </div>
+    <div id="breaker-two">
+    </div>
+
+    <div id="navigation-content">
+        <div class="logo">
+            <img src="images/logo.png" alt="logo">
+        </div>
+        <div class="navigation-links">
+            <a href="#" data-text="HOME" id="home-link">HOME</a>
+            <a href="#" data-text="ABOUT" id="about-link">ABOUT</a>
+            <a href="#" data-text="PORTFOLIO" id="portfolio-link">PORTFOLIO</a>
+            <a href="#" data-text="CONTACT" id="contact-link">CONTACT</a>
+        </div>
+    </div>
+
+    <div id="navigation-bar">
+        <img src="images/logo.png" alt="logo">
+        <div class="menubar">
+            <span class="first-span"></span>
+            <span class="second-span"></span>
+            <span class="third-span"></span>
+        </div>
+    </div>
+
+    <div id="header">
+        <div id="particles"></div>
+
+        <div class="header-content">
+            <div class="header-content-box">
+                <div class="firstline"><span class="color">Patrick </span>Seidel</div>
+                <div class="secondline">
+                    Ich bin ein
+                    <span class="txt-rotate color" data-period="1200"
+                        data-rotate='[ " Programmierer.", " Spieler.", " Freelancer." ]'></span>
+                    <span class="slash">|</span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="header-image">
+            <img src="images/Paddy.png" alt="logo">
+        </div>
+
+    </div>
+
+    <div id="about">
+
+
+        <div id="about-content">
+            <div class="about-header">
+                Über <span class="color">mich!</span>
+                <span class="header-caption">Alles wissenertes<span class="color"> finden sie hier.</span></span>
+            </div>
+            <div class="about-main">
+                <div class="about-first-paragraph wow">
+
+                    <span class="about-first-line">
+                        Ich bin ein angehender <br>
+                        <span class="color">"Web developer"</span>
+                        . <br>Komme aus Hamburg.</span>
+                    <br>
+                    <span class="about-second-line"> Mit mitlerweile fast 20 Jahren Erfahrung in HTML und PHP.
+                        <br> Seit 2021 ausbildung in CSS, SCSS und Javascript.
+                        <br>
+                    </span>
+                    <div class="cv">
+                        <a href="#"><button>Download <span class="colors">Lebenslauf</span></button></a>
+                    </div>
+                </div>
+
+                <div class="about-img">
+                    <img src="images/man.jpg" alt="Your Image">
+                </div>
+            </div>
+
+        </div>
+
+        <div id="services">
+
+
+            <div class="services-heading wow">
+                <span class="color">Was</span> ich kann!
+            </div>
+
+            <div class="services-content">
+                <div class="service-one service wow">
+                    <div class="service-img">
+                        <img src="images/coding.png" alt="service-one">
+                    </div>
+                    <div class="service-description">
+                        <h2>Web Designing</h2>
+                        <p>Ich habe mir das Programmieren mit 14 Jahren Autodidaktisch beigebracht. Habe seit dem
+                            Zeitpunkt viele Homepagen erstellt und bearbeitet.
+                            <br>Mehr Projekte finden Sie im Portfolio.
+                        </p>
+                    </div>
+                </div>
+                <div class="service-two service wow">
+                    <div class="service-img">
+                        <img src="images/multim.webp" alt="service-two">
+                    </div>
+                    <div class="service-description">
+                        <h2>Videobearbeitung</h2>
+                        <p>Videos schneiden, Ton anpassen, Effecte anpassen und Intros mit Sony Vegas. <br> Welches
+                            Schnittprogramm ist egal ich kann mich sehr schnell einarbeiten.</p>
+                    </div>
+                </div>
+                <div class="service-three service wow">
+                    <div class="service-img">
+                        <img src="images/contro.webp" alt="service-three">
+                    </div>
+                    <div class="service-description">
+                        <h2>Spiele</h2>
+                        <p>Ich bin leidenschaftlicher Spieler, daher habe im im Jahre 2021 damit angefangen Spiele
+                            selber zu machen.
+                            <br>Momentan Point and Click Adventure und 2D Plattformer mit Unity.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="skills">
+            <div class="skills-header">
+                Meine <span class="color">Fähigkeiten</span>
+            </div>
+            <div class="skills-content " style="text-align: center;">
+                <div class="skill-html skill">
+                    <div class="skill-text">
+                        <div class="html">
+                            HTML/CSS
+                        </div>
+                    </div>
+                    <div class="html-prog wow prog">
+                        <div class="html-progress wow">90%</div>
+                    </div>
+                </div>
+                <div class="skill-html skill">
+                    <div class="skill-text">
+                        <div class="html">
+                            Javascript
+                        </div>
+                    </div>
+                    <div class="html-prog wow prog">
+                        <div class="js-progress wow">05%</div>
+                    </div>
+                </div>
+                <div class="skill-html skill">
+                    <div class="skill-text">
+                        <div class="html">
+                            Spielen
+                        </div>
+                    </div>
+                    <div class="html-prog wow prog">
+                        <div class="adobe-progress wow">83%</div>
+                    </div>
+                </div>
+                <div class="skill-html skill">
+                    <div class="skill-text">
+                        <div class="html">
+                            Video Bearbeitung
+                        </div>
+                    </div>
+                    <div class="html-prog wow prog">
+                        <div class="php-progress wow">72%</div>
+                    </div>
+                </div>
+                <div class="skill-html skill">
+                    <div class="skill-text">
+                        <div class="html">
+                            JQuery
+                        </div>
+                    </div>
+                    <div class="html-prog wow prog">
+                        <div class="jquery-progress wow">0%</div>
+                    </div>
+                </div>
+                <div class="skill-html skill">
+                    <div class="skill-text">
+                        <div class="html">
+                            Fotobearbeitung
+                        </div>
+                    </div>
+                    <div class="html-prog wow prog">
+                        <div class="seo-progress wow">50%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-text">
+                <i class="far fa-copyright"></i> Patrick Seidel, Nienredder 10c, 22527 Hamburg, P.Seidel.1987@gmail.com
+            </div>
+        </div>
+
+    </div>
+
+    <div id="portfolio">
+
+        <div class="portfolio-header"> <span class="color"> My </span> Portfolio
+            <span class="header-caption"> Some Of My <span class="color"> Works</span></span>
+        </div>
+        <div id="portfolio-content">
+            <div class="portfolio portfolio-first">
+                <div class="portfolio-image">
+                    <img src="images/portfolio-first.jpg" alt="portfolio-first">
+                </div>
+                <div class="portfolio-text">
+                    <h2>Blero Trockenbau</h2>
+                    <p>Homepage nach Designwunsch des Kundens. Design wurde vom Kunden gekauft und nach seinen Wünschen
+                        umgeändert.
+                    </p>
+                    <div class="button"><a href="#"><button><span class="index"> View Project<i
+                                        class="gg-arrow-right"></i></span></button></a></div>
+                </div>
+            </div>
+            <div class="portfolio portfolio-second">
+                <div class="portfolio-image">
+                    <img src="images/portfolio-second.jpg" alt="portfolio-second">
+                </div>
+                <div class="portfolio-text">
+                    <h2>Leitwolf-Mimenki-Production</h2>
+                    <p>Eigendes Design und Inhalt</p>
+                    <div class="button"><a href="#"><button><span class="index"> View Project<i
+                                        class="gg-arrow-right"></i></span></button></a></div>
+                </div>
+            </div>
+
+            <div class="portfolio portfolio-third">
+                <div class="portfolio-image">
+                    <img src="images/portfolio-third.jpg" alt="portfolio-third">
+                </div>
+                <div class="portfolio-text">
+                    <h2>Hausmeister Service Großer</h2>
+                    <p>Design Ähnlich einer anderen Firma. Wunsch des Kunden, weil sie zusammen gearbeitet haben.
+                        Inhalte von mir Design Ähnlich nachgebaut.</p>
+                    <div class="button"><a href="#"><button><span class="index"> View Project<i
+                                        class="gg-arrow-right"></i></span></button></a></div>
+                </div>
+            </div>
+            <div class="portfolio portfolio-fourth">
+                <div class=" portfolio-image">
+                    <img src="images/portfolio-fourth.jpg" alt="portfolio-fourth">
+                </div>
+                <div class="portfolio-text">
+                    <h2>Tarqoon Elite</h2>
+                    <p>Nachbau Anderer Homepage auf Wunsch des Kunden, mit erlaubniss der anderen Firma.
+                        Videos und Inhalte von mir.
+                    </p>
+                    <div class="button"><a href="#"><button><span class="index"> View Project<i
+                                        class="gg-arrow-right"></i></span></button></a></div>
+                </div>
+            </div>
+            <div class="portfolio portfolio-fourth">
+                <div class=" portfolio-image">
+                    <img src="images/portfolio-five.jpg" alt="portfolio-fourth">
+                </div>
+                <div class="portfolio-text">
+                    <h2>Back Baba</h2>
+                    <p>Design, Bilder und Inhalt komplett von mir.
+                    </p>
+                    <div class="button"><a href="#"><button><span class="index"> View Project<i
+                                        class="gg-arrow-right"></i></span></button></a></div>
+                </div>
+            </div>
+            <div class="portfolio portfolio-fourth">
+                <div class=" portfolio-image">
+                    <img src="images/portfolio-six.jpg" alt="portfolio-fourth">
+                </div>
+                <div class="portfolio-text">
+                    <h2>Online Shop Shirts and Print</h2>
+                    <p>Mein erster Versuch eines Online Shops. Leider nie in einsatz gekommen.
+                        <br>Viel Arbeit.
+                    </p>
+                    <div class="button"><a href="#"><button><span class="index"> View Project<i
+                                        class="gg-arrow-right"></i></span></button></a></div>
+                </div>
+            </div>
+            <div class="portfolio-header"> <span class="color"> Weiter </span> Arbeiten
+                <span class="header-caption"> Videos <span class="color"> mit Intros</span></span>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/qPtuVu_HXko"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-text">
+                <i class="far fa-copyright"></i> Patrick Seidel, Nienredder 10c, 22527 Hamburg, P.Seidel.1987@gmail.com
+            </div>
+        </div>
+
+    </div>
+
+    <div id="contact">
+
+        <div class="contact-header">Contact <span class="color"> Me</span>
+            <div class="contact-header-caption"> <span class="color"> Get</span> In Touch.</div>
+        </div>
+        <div class="contact-content">
+
+            <div class="contact-form">
+                <div class="form-header">
+                    Message Me
+                </div>
+                <form id="myForm" action="#">
+                    <div class="input-line">
+                        <input id="name" type="text" placeholder="Name" class="input-name">
+                        <input id="email" type="email" placeholder="Email" class="input-name">
+                    </div>
+                    <input type="text" id="subject" placeholder="subject" class="input-subject">
+                    <textarea id="" class="input-textarea" placeholder="message"></textarea>
+                    <button type="button" id="submit" value="send">Submit</button>
+                </form>
+
+            </div>
+
+            <div class="contact-info">
+                <div class="contact-info-header">
+                    Contact Info
+                </div>
+                <div class="contact-info-content">
+                    <div class="contect-info-content-line">
+                        <img src="./images/icon-name.png" class="icon" alt="name-icon">
+                        <div class="contact-info-icon-text">
+                            <h6>Name</h6>
+                            <p>Patrick Seidel</p>
+                        </div>
+                    </div>
+                    <div class="contect-info-content-line">
+                        <img src="./images/icon-location.png" class="icon" alt="location-icon">
+                        <div class="contact-info-icon-text">
+                            <h6>Location</h6>
+                            <p>Hamburg, Germany</p>
+                        </div>
+                    </div>
+                    <div class="contect-info-content-line">
+                        <img src="./images/icon-phone.png" class="icon" alt="phone-icon">
+                        <div class="contact-info-icon-text">
+                            <h6>Call</h6>
+                            <p>+494054887219</p>
+                        </div>
+                    </div>
+
+                    <div class="contect-info-content-line">
+                        <img src="./images/icon-email.png" class="icon" alt="email-icon">
+                        <div class="contact-info-icon-text">
+                            <h6>Email</h6>
+                            <p>p.seidel.1987@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-text">
+                <i class="far fa-copyright"></i> Patrick Seidel, Nienredder 10c, 22527 Hamburg, P.Seidel.1987@gmail.com
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+
+
+</body>
+
+</html>
