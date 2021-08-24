@@ -175,6 +175,7 @@ $sexy: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(69,7,7,1) 100%);
   .header-image {
     img {
       height: 100vh;
+      transform: scale(1.2);
       float: right;
     }
   

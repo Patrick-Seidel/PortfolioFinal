@@ -129,6 +129,7 @@ body {
 }
 .header-image img {
   height: 100vh;
+  transform: scale(1.2);
   float: right;
 }
 
