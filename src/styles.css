@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Edo";
+  src: url("../web fonts/edo_regular_macroman/edo-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   padding: 0%;
   margin: 0%;
@@ -14,6 +20,19 @@ body {
   overflow-x: hidden;
   width: 100%;
   background: linear-gradient(90deg, black 0%, #450707 100%);
+}
+
+details {
+  height: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: edo;
+}
+
+summary::marker {
+  color: transparent;
 }
 
 #header {
@@ -77,14 +96,42 @@ body {
   margin: 6px;
   border-radius: 20px;
 }
-.menubar .first-span, .menubar .second-span, .menubar .third-span {
+.menubar .first-span {
   width: 35px;
 }
-.menubar .first-span::before, .menubar .second-span::before, .menubar .third-span::before {
+.menubar .first-span::before {
   content: "";
   position: absolute;
   height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  transition: all 0.5s ease;
   width: 50%;
+}
+.menubar .second-span {
+  width: 35px;
+}
+.menubar .second-span::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  transition: all 0.5s ease;
+  width: 75%;
+}
+.menubar .third-span {
+  width: 35px;
+}
+.menubar .third-span::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
   top: 0;
   right: 0;
   background-color: #fff;
@@ -129,7 +176,6 @@ body {
 }
 .header-image img {
   height: 100vh;
-  transform: scale(1.2);
   float: right;
 }
 
@@ -161,6 +207,7 @@ body {
 .header-content .firstline {
   z-index: 2;
   font-weight: 700;
+  font-family: edo;
   font-size: 65px;
 }
 .header-content .secondline {
@@ -200,9 +247,9 @@ body {
   transform: translate(-50%, -50%);
   font-size: 5em;
   font-weight: 400;
-  font-family: exo 2, Arial, Impact;
-  color: rgba(255, 255, 255, 0.1);
-  z-index: 1;
+  font-family: edo, Arial, Impact;
+  color: #BB0035;
+  z-index: -1;
   pointer-events: none;
   opacity: 0;
   letter-spacing: 100px;
@@ -282,7 +329,7 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 45px;
-  font-family: exo 2, Arial, Impact;
+  font-family: edo, Arial, Impact;
   color: #fff;
   padding: 10px;
   padding-bottom: 30px;
@@ -623,7 +670,7 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 45px;
-  font-family: exo 2, Arial, Impact;
+  font-family: edo, Arial, Impact;
   transition: all 0.4s ease;
   color: #fff;
   padding: 10px;
@@ -668,6 +715,7 @@ body {
   z-index: 3;
   opacity: 1;
   background: black;
+  border-radius: 20% 0;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -736,8 +784,8 @@ button:hover .index {
   width: 40%;
 }
 .portfolio-image img {
-  height: 400px;
   width: 100%;
+  border-radius: 15%;
   position: relative;
 }
 .portfolio-image img::before {
@@ -788,7 +836,7 @@ button:hover .index {
   align-items: center;
   justify-content: center;
   font-size: 45px;
-  font-family: exo 2, Arial, Impact;
+  font-family: edo, Arial, Impact;
   color: #fff;
   padding: 10px;
   padding-bottom: 30px;
@@ -1160,7 +1208,6 @@ form button:hover {
     width: 90%;
   }
   .portfolio-image img {
-    height: 300px;
     width: 100%;
   }
 
@@ -1511,7 +1558,6 @@ form button:hover {
     width: 70%;
   }
   .portfolio-image img {
-    height: 380px;
     width: 100%;
     position: relative;
   }
