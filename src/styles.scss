@@ -59,6 +59,21 @@
         background-color: $smoke;
         transition: all .5s ease;
   }
+  @mixin header {
+    height: auto;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+    font-family: edo, Arial, Impact;
+    color: $smoke;
+    padding: 10px;
+    padding-bottom: 30px;
+    padding-top: 60px;
+    font-weight: 900;
+    background: $sexy;
+  }
 $smoke: #fff;
 $redy: #BB0035;
 $sexy: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(69,7,7,1) 100%);
@@ -96,6 +111,7 @@ $sexy: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(69,7,7,1) 100%);
    }
    summary::marker {
     color: transparent;
+    
  }
   
   #header {
@@ -108,16 +124,6 @@ $sexy: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(69,7,7,1) 100%);
     display: block;
   }
   
-  #particles {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100vw;
-    background-size: cover;
-    background-position: 50% 50%;
-    display: block;
-  }
   
   #navigation-content {
     height: 100vh;
@@ -365,18 +371,7 @@ $sexy: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(69,7,7,1) 100%);
   }
   
   .about-header {
-    height: auto;
-    width: 100%;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    font-size: 45px;
-    font-family: edo, Arial, Impact;
-    color: $smoke;
-    padding: 10px;
-    padding-bottom: 30px;
-    padding-top: 60px;
-    font-weight: 900;
+   @include header
   }
   
   .about-first-paragraph {
@@ -591,7 +586,6 @@ $sexy: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(69,7,7,1) 100%);
     width: 45%;
     padding: 0%;
     position: relative;
-    
     color: $smoke;
     display: inline-block;
     padding: 1.5%;
@@ -693,20 +687,7 @@ $sexy: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(69,7,7,1) 100%);
   }
   
   .portfolio-header {
-    height: auto;
-    width: 100%;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    font-size: 45px;
-    font-family: edo, Arial, Impact;
-    transition: all .4s ease;
-    color: $smoke;
-    padding: 10px;
-    padding-bottom: 30px;
-    padding-top: 60px;
-    font-weight: 900;
-    background: $sexy;
+   @include header;
   }
   
   .header-caption {
@@ -733,7 +714,7 @@ $sexy: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(69,7,7,1) 100%);
   }
   
   .portfolio-text {
-    width: 40%;
+    width: 50%;
     padding-left: 1%;
     margin: 1%;
     margin-left: -40px;
@@ -820,21 +801,8 @@ $sexy: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(69,7,7,1) 100%);
       border-radius: 15%;
       position: relative;
   
-      &::before {
-        content: "";
-        height: 100%;
-        width: 100%;
-        background: #c70039;
-        opacity: .1;
-        top: 0;
-        left: 0;
-        transition: all .4s ease;
-        position: absolute;
-        z-index: 2;
-      }
     }
-  
-    height: 400px;
+
     width: 40%;
   }
   
@@ -864,18 +832,7 @@ $sexy: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(69,7,7,1) 100%);
   }
   
   .contact-header {
-    height: auto;
-    width: 100%;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    font-size: 45px;
-    font-family: edo, Arial, Impact;
-    color: $smoke;
-    padding: 10px;
-    padding-bottom: 30px;
-    padding-top: 60px;
-    font-weight: 900;
+    @include header;
   }
   
   .contact-header-caption {
@@ -898,26 +855,14 @@ $sexy: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(69,7,7,1) 100%);
   .contact-info {
     width: 40%;
     height: 500px;
-    background: url(../images/contact-back.jpg);
+    background: $redy;
     background-position: center;
     background-size: cover;
     border-radius: 16px;
     margin-bottom: 50px;
     position: relative;
-    overflow: hidden;
     
-  
-    &::before {
-      content: "";
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      background: #101010;
-      opacity: .8;
-      pointer-events: none;
-    }
+    
   }
   
   .contact-form {
@@ -1056,9 +1001,10 @@ $sexy: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(69,7,7,1) 100%);
     .footer-text {
       position: relative;
       display: inline;
-      font-size: 18px;
+      font-size: 14px;
       font-weight: 400;
       opacity: 1;
+      text-align: center;
     }
   }
 
@@ -1073,19 +1019,11 @@ $sexy: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(69,7,7,1) 100%);
     }
   
     .about-header {
-      color: $smoke;
-      justify-content: center;
       font-size: 35px;
-      font-family: exo 2, Arial, Impact;
-      padding: 10px;
-      font-weight: 900;
+   
     }
   
     .about-first-paragraph {
-      color: $smoke;
-      justify-content: center;
-      font-size: 20px;
-      
       width: 95%;
       padding: 10px;
       font-weight: 400;
@@ -1097,9 +1035,7 @@ $sexy: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(69,7,7,1) 100%);
   
     .about-first-line {
       font-size: 28px;
-      opacity: 1;
-      margin-bottom: 10px;
-      display: block;
+    
     }
   
     .about-second-line {
@@ -1108,9 +1044,6 @@ $sexy: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(69,7,7,1) 100%);
     }
   
     .about-main {
-      @include flex-dir;
-      width: 100vw;
-      height: auto;
       padding-left: 10px;
       padding-right: 10px;
       flex-direction: column-reverse;
@@ -1134,40 +1067,13 @@ $sexy: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(69,7,7,1) 100%);
     .service {
       height: 320px;
       width: 90%;
-      margin: 1.5%;
-      background-color: #191919;
-      display: inline-block;
-      box-shadow: 0px 0px 25px rgb(0, 0, 0, 0.1);
-      position: relative;
-      text-align: center;
-      z-index: 2;
-      border-radius: 10px;
-      overflow: hidden;
     }
   
     .service-img img {
-      display: inline-block;
-      z-index: 2;
-      position: relative;
-      margin: 20px;
-      border-radius: 30%;
-      padding: 10px;
       height: 80px;
-      transition: all .8s ease;
-    }
-  
-    .skill {
-      width: 80%;
-    }
-  
-    .prog {
-      height: 30px;
     }
   
     .skills-content {
-      height: auto;
-      width: 100%;
-      margin-top: 20px;
       margin-bottom: 15px;
     }
   
@@ -1258,19 +1164,7 @@ $sexy: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(69,7,7,1) 100%);
       border-radius: 16px;
       margin-bottom: 25px;
       position: relative;
-      overflow: hidden;
-  
-      &::before {
-        content: "";
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: #101010;
-        opacity: .7;
-        pointer-events: none;
-      }
+     
     }
   
     .contact-form {
@@ -1363,17 +1257,6 @@ $sexy: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(69,7,7,1) 100%);
       padding: 20px;
     }
   
-    .contect-info-content-line {
-      height: auto;
-      padding: 10px;
-      position: relative;
-      z-index: 2;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      text-align: left;
-      margin-left: 5%;
-    }
   
     .contact-info-icon-text {
       color: $smoke;
@@ -1496,14 +1379,6 @@ $sexy: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(69,7,7,1) 100%);
       }
     }
   
-    .skill {
-      width: 40%;
-    }
-  
-    .prog {
-      height: 35px;
-    }
-  
     .skills-content {
       height: auto;
       width: 100%;
@@ -1599,19 +1474,8 @@ $sexy: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(69,7,7,1) 100%);
       border-radius: 16px;
       margin-bottom: 50px;
       position: relative;
-      overflow: hidden;
+
   
-      &::before {
-        content: "";
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: #101010;
-        opacity: .7;
-        pointer-events: none;
-      }
     }
   
     .contact-form {
@@ -1703,24 +1567,6 @@ $sexy: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(69,7,7,1) 100%);
       padding: 20px;
     }
   
-    .contect-info-content-line {
-      height: auto;
-      padding: 10px;
-      position: relative;
-      z-index: 2;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      text-align: left;
-      margin-left: 30%;
-    }
   
    
   }
- 
-
- 
-
- 
-
- 

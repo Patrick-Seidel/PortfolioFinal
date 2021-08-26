@@ -45,17 +45,6 @@ summary::marker {
   display: block;
 }
 
-#particles {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100vw;
-  background-size: cover;
-  background-position: 50% 50%;
-  display: block;
-}
-
 #navigation-content {
   height: 100vh;
   width: 100%;
@@ -335,6 +324,7 @@ summary::marker {
   padding-bottom: 30px;
   padding-top: 60px;
   font-weight: 900;
+  background: linear-gradient(90deg, black 0%, #450707 100%);
 }
 
 .about-first-paragraph {
@@ -671,7 +661,6 @@ summary::marker {
   justify-content: center;
   font-size: 45px;
   font-family: edo, Arial, Impact;
-  transition: all 0.4s ease;
   color: #fff;
   padding: 10px;
   padding-bottom: 30px;
@@ -707,7 +696,7 @@ summary::marker {
 }
 
 .portfolio-text {
-  width: 40%;
+  width: 50%;
   padding-left: 1%;
   margin: 1%;
   margin-left: -40px;
@@ -780,25 +769,12 @@ button:hover .index {
 }
 
 .portfolio-image {
-  height: 400px;
   width: 40%;
 }
 .portfolio-image img {
   width: 100%;
   border-radius: 15%;
   position: relative;
-}
-.portfolio-image img::before {
-  content: "";
-  height: 100%;
-  width: 100%;
-  background: #c70039;
-  opacity: 0.1;
-  top: 0;
-  left: 0;
-  transition: all 0.4s ease;
-  position: absolute;
-  z-index: 2;
 }
 
 #portfolio-content {
@@ -842,6 +818,7 @@ button:hover .index {
   padding-bottom: 30px;
   padding-top: 60px;
   font-weight: 900;
+  background: linear-gradient(90deg, black 0%, #450707 100%);
 }
 
 .contact-header-caption {
@@ -867,24 +844,12 @@ button:hover .index {
 .contact-info {
   width: 40%;
   height: 500px;
-  background: url(../images/contact-back.jpg);
+  background: #BB0035;
   background-position: center;
   background-size: cover;
   border-radius: 16px;
   margin-bottom: 50px;
   position: relative;
-  overflow: hidden;
-}
-.contact-info::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: #101010;
-  opacity: 0.8;
-  pointer-events: none;
 }
 
 .contact-form {
@@ -1027,9 +992,10 @@ form button:hover {
 .footer .footer-text {
   position: relative;
   display: inline;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 400;
   opacity: 1;
+  text-align: center;
 }
 
 @media only screen and (max-width: 550px) {
@@ -1056,18 +1022,10 @@ form button:hover {
   }
 
   .about-header {
-    color: #fff;
-    justify-content: center;
     font-size: 35px;
-    font-family: exo 2, Arial, Impact;
-    padding: 10px;
-    font-weight: 900;
   }
 
   .about-first-paragraph {
-    color: #fff;
-    justify-content: center;
-    font-size: 20px;
     width: 95%;
     padding: 10px;
     font-weight: 400;
@@ -1078,9 +1036,6 @@ form button:hover {
 
   .about-first-line {
     font-size: 28px;
-    opacity: 1;
-    margin-bottom: 10px;
-    display: block;
   }
 
   .about-second-line {
@@ -1089,12 +1044,6 @@ form button:hover {
   }
 
   .about-main {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    width: 100vw;
-    height: auto;
     padding-left: 10px;
     padding-right: 10px;
     flex-direction: column-reverse;
@@ -1117,40 +1066,13 @@ form button:hover {
   .service {
     height: 320px;
     width: 90%;
-    margin: 1.5%;
-    background-color: #191919;
-    display: inline-block;
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
-    position: relative;
-    text-align: center;
-    z-index: 2;
-    border-radius: 10px;
-    overflow: hidden;
   }
 
   .service-img img {
-    display: inline-block;
-    z-index: 2;
-    position: relative;
-    margin: 20px;
-    border-radius: 30%;
-    padding: 10px;
     height: 80px;
-    transition: all 0.8s ease;
-  }
-
-  .skill {
-    width: 80%;
-  }
-
-  .prog {
-    height: 30px;
   }
 
   .skills-content {
-    height: auto;
-    width: 100%;
-    margin-top: 20px;
     margin-bottom: 15px;
   }
 
@@ -1239,18 +1161,6 @@ form button:hover {
     border-radius: 16px;
     margin-bottom: 25px;
     position: relative;
-    overflow: hidden;
-  }
-  .contact-info::before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #101010;
-    opacity: 0.7;
-    pointer-events: none;
   }
 
   .contact-form {
@@ -1349,18 +1259,6 @@ form button:hover {
     font-weight: 400;
     color: #fff;
     padding: 20px;
-  }
-
-  .contect-info-content-line {
-    height: auto;
-    padding: 10px;
-    position: relative;
-    z-index: 2;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: left;
-    margin-left: 5%;
   }
 
   .contact-info-icon-text {
@@ -1487,14 +1385,6 @@ form button:hover {
     opacity: 0.8;
   }
 
-  .skill {
-    width: 40%;
-  }
-
-  .prog {
-    height: 35px;
-  }
-
   .skills-content {
     height: auto;
     width: 100%;
@@ -1589,18 +1479,6 @@ form button:hover {
     border-radius: 16px;
     margin-bottom: 50px;
     position: relative;
-    overflow: hidden;
-  }
-  .contact-info::before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #101010;
-    opacity: 0.7;
-    pointer-events: none;
   }
 
   .contact-form {
@@ -1704,18 +1582,6 @@ form button:hover {
     font-weight: 400;
     color: #fff;
     padding: 20px;
-  }
-
-  .contect-info-content-line {
-    height: auto;
-    padding: 10px;
-    position: relative;
-    z-index: 2;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: left;
-    margin-left: 30%;
   }
 }
 
